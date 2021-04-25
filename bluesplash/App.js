@@ -17,6 +17,7 @@ console.log('Language found: ' + I18N('language'));
 import Colors from './Colors';
 
 import SplashScreen from './screens/SplashScreen';
+import OnboardingScreen from './screens/OnboardingScreen';
 
 const App = () => {
   const [splashMode, setSplashMode] = useState(true);
@@ -29,13 +30,15 @@ const App = () => {
 
   if (splashMode) {
     return <SplashScreen />;
+  } else {
+    return <OnboardingScreen />;
   }
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.bodyText}>Hello</Text>
-    </View>
-  );
+  // return (
+  //   <View style={styles.container}>
+  //     <Text style={styles.bodyText}>Hello</Text>
+  //   </View>
+  // );
 };
 
 const styles = StyleSheet.create({
