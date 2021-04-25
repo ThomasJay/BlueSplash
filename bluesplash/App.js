@@ -10,6 +10,8 @@ import React, {useState, useEffect} from 'react';
 
 import {StyleSheet, Text, View} from 'react-native';
 
+import Colors from './Colors';
+
 import SplashScreen from './screens/SplashScreen';
 
 const App = () => {
@@ -35,11 +37,11 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: Colors.white,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  bodyText: {color: '#000', fontSize: 20, fontWeight: 'bold'},
+  bodyText: {color: Colors.black, fontSize: 20, fontWeight: 'bold'},
 });
 
 export default App;
