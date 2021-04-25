@@ -10,6 +10,10 @@ import React, {useState, useEffect} from 'react';
 
 import {StyleSheet, Text, View} from 'react-native';
 
+import I18N from './i18n/I18N';
+
+console.log('Language found: ' + I18N('language'));
+
 import Colors from './Colors';
 
 import SplashScreen from './screens/SplashScreen';
